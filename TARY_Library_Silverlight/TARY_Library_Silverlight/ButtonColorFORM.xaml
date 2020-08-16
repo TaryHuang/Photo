@@ -1,0 +1,115 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="TARY_Library_Silverlight.ButtonColorFORM"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape"  Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" Loaded="PhoneApplicationPage_Loaded" OrientationChanged="PhoneApplicationPage_OrientationChanged_1">
+
+    <!--LayoutRoot 是放置所有頁面的根資料格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="95" />
+            <RowDefinition Height="350" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <!--TitlePanel 包含應用程式的名稱和頁面標題-->
+        <StackPanel Grid.Row="0" x:Name="TitlePanel"  Grid.RowSpan="2" UseLayoutRounding="True">
+            <TextBlock x:Name="PageTitle" Text=""  Style="{StaticResource PhoneTextTitle1Style}" FontSize="56" />
+        </StackPanel>
+
+
+        <Grid Grid.Row="1" Height="550" HorizontalAlignment="Left"  Name="BOX" VerticalAlignment="Top" Width="480" UseLayoutRounding="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="65"/>
+                <ColumnDefinition Width="65"/>
+                <ColumnDefinition Width="65"/>
+                <ColumnDefinition Width="65"/>
+                <ColumnDefinition Width="65"/>
+                <ColumnDefinition Width="65"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="65"/>
+                <RowDefinition Height="65"/>
+                <RowDefinition Height="65"/>
+                <RowDefinition Height="65"/>
+                <RowDefinition Height="65"/>
+                <RowDefinition Height="65"/>
+            </Grid.RowDefinitions>
+            <Border Grid.Row="0" Grid.Column="1" x:Name="B1"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFFF0000"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="0" Grid.Column="2" x:Name="B2"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFFF7F27"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="0" Grid.Column="3" x:Name="B3"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFFFF200"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="0" Grid.Column="4" x:Name="B4"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FF22B14C"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="0" Grid.Column="5" x:Name="B5"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FF009ADC"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="0" Grid.Column="6" x:Name="B6"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFD40909"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+
+
+            <Border Grid.Row="1" Grid.Column="1" x:Name="B7"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFFFAEC9"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="1" Grid.Column="2" x:Name="B8"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFFFC600"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="1" Grid.Column="3" x:Name="B9"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFEFE4B0"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="1" Grid.Column="4" x:Name="B10"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFB5F01D"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="1" Grid.Column="5" x:Name="B11"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FF99E7EA"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="1" Grid.Column="6" x:Name="B12"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FF3BD2D8"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+
+
+            <Border Grid.Row="2" Grid.Column="1" x:Name="B13"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FF6CFF28"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="2" Grid.Column="2" x:Name="B14"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFD27BFB"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="2" Grid.Column="3" x:Name="B15"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFFF5D76"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="2" Grid.Column="4" x:Name="B16"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FF00AEFF"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="2" Grid.Column="5" x:Name="B17"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFFBAAAA"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="2" Grid.Column="6" x:Name="B18"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFFFDE87"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+
+
+
+
+            <Border Grid.Row="3" Grid.Column="1" x:Name="B19"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FF3F48CC"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="3" Grid.Column="2" x:Name="B20"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFA349A4"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="3" Grid.Column="3" x:Name="B21"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FF990C21"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="3" Grid.Column="4" x:Name="B22"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FF7F7F7F"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="3" Grid.Column="5" x:Name="B23"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FF703E3E"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="3" Grid.Column="6" x:Name="B24"  BorderBrush="#FF474343" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="64" Height="64" Background="White"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+
+
+
+            <Border Grid.Row="4" Grid.Column="1" x:Name="B25"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FF7092BE"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="4" Grid.Column="2" x:Name="B26"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFBFB1F0"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="4" Grid.Column="3" x:Name="B27"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFB97A57"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="4" Grid.Column="4" x:Name="B28"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFC3C3C3"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="4" Grid.Column="5" x:Name="B29"  BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="65" Height="65" Background="#FFBBBB8C"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+            <Border Grid.Row="4" Grid.Column="6" x:Name="B30"  BorderBrush="#FF474343" BorderThickness="1" HorizontalAlignment="Center" VerticalAlignment="Center" Width="64" Height="64" Background="Black"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+        </Grid>
+        <!--ContentPanel - 其他內容置於此-->
+
+        <Grid x:Name="AphiaGrid" HorizontalAlignment="Left" Height="120"   VerticalAlignment="Top" Width="200" Grid.Row="2" Margin="0,0,0,0"/>
+        
+        
+        <StackPanel x:Name="my" Orientation="Horizontal" HorizontalAlignment="Left" Height="130"  Grid.Row="2" VerticalAlignment="Top" Width="184" Margin="286,38,0,0">
+            <Border x:Name="myB" BorderBrush="#FF474343" BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="65" Height="65" Background="#FFBBBB8C"  MouseLeftButtonUp="Border_MouseLeftButtonUp" Margin="0,0,10,0" />
+            <Border x:Name="myA"  BorderBrush="#FF474343" BorderThickness="2" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="100" Height="100" Background="#FFBBBB8C"  MouseLeftButtonUp="Border_MouseLeftButtonUp"/>
+        </StackPanel>
+    </Grid>
+
+    <!--顯示 ApplicationBar 使用方式的程式碼範例-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="按鈕 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="按鈕 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="功能表項目 1"/>
+                <shell:ApplicationBarMenuItem Text="功能表項目 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

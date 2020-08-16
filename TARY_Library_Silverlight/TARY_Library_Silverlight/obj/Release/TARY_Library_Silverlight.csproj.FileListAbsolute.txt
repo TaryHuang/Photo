@@ -1,0 +1,75 @@
+C:\Users\USER\Documents\Visual Studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\TARY_Library_Silverlight.dll
+C:\Users\USER\Documents\Visual Studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\TARY_Library_Silverlight.pdb
+C:\Users\USER\Documents\Visual Studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\USER\Documents\Visual Studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\Microsoft.Phone.Controls.xml
+C:\Users\USER\Documents\Visual Studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ResolveAssemblyReference.cache
+C:\Users\USER\Documents\Visual Studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.g.resources
+C:\Users\USER\Documents\Visual Studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.dll
+C:\Users\USER\Documents\Visual Studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.pdb
+C:\Users\USER\Documents\Visual Studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonListFORM.g.i.cs
+C:\Users\USER\Documents\Visual Studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TaryPage.g.i.cs
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\TARY_Library_Silverlight.dll
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\TARY_Library_Silverlight.pdb
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\Microsoft.Phone.Controls.dll
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\Microsoft.Phone.Controls.xml
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ResolveAssemblyReference.cache
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonDateFORM.g.i.cs
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonListFORM.g.i.cs
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\Page1.g.i.cs
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TaryPage.g.i.cs
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.g.resources
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.dll
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.pdb
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\TARY_Library_Silverlight.dll
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\TARY_Library_Silverlight.pdb
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\Microsoft.Phone.Controls.xml
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonDateFORM.g.cs
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonListFORM.g.cs
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TaryPage.g.cs
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.g.resources
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.dll
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.pdb
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonColorFORM.g.cs
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\Popup\PopupMessageForm.g.cs
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\TARY_Library_Silverlight.dll
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\TARY_Library_Silverlight.pdb
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\Microsoft.Phone.Controls.xml
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonDateFORM.g.i.cs
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonListFORM.g.i.cs
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\Page1.g.i.cs
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\Popup\PopupMessageForm.g.i.cs
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TaryPage.g.i.cs
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonColorFORM.g.i.cs
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.g.resources
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.dll
+C:\Users\Tary\Desktop\2013.01.25\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.pdb
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.csprojResolveAssemblyReference.cache
+C:\Users\Tary\Desktop\2013.03.27提交\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\TARY_Library_Silverlight.dll
+C:\Users\Tary\Desktop\2013.03.27提交\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\TARY_Library_Silverlight.pdb
+C:\Users\Tary\Desktop\2013.03.27提交\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Tary\Desktop\2013.03.27提交\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\Microsoft.Phone.Controls.xml
+C:\Users\Tary\Desktop\2013.03.27提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Tary\Desktop\2013.03.27提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonDateFORM.g.i.cs
+C:\Users\Tary\Desktop\2013.03.27提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonListFORM.g.i.cs
+C:\Users\Tary\Desktop\2013.03.27提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\Popup\PopupMessageForm.g.i.cs
+C:\Users\Tary\Desktop\2013.03.27提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TaryPage.g.i.cs
+C:\Users\Tary\Desktop\2013.03.27提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonColorFORM.g.i.cs
+C:\Users\Tary\Desktop\2013.03.27提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.g.resources
+C:\Users\Tary\Desktop\2013.03.27提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.dll
+C:\Users\Tary\Desktop\2013.03.27提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.pdb
+C:\Users\Tary\Desktop\2013.06.08提交\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\TARY_Library_Silverlight.dll
+C:\Users\Tary\Desktop\2013.06.08提交\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\TARY_Library_Silverlight.pdb
+C:\Users\Tary\Desktop\2013.06.08提交\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\Microsoft.Phone.Controls.dll
+C:\Users\Tary\Desktop\2013.06.08提交\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\Microsoft.Phone.Controls.xml
+C:\Users\Tary\Desktop\2013.06.08提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Tary\Desktop\2013.06.08提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonDateFORM.g.i.cs
+C:\Users\Tary\Desktop\2013.06.08提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonListFORM.g.i.cs
+C:\Users\Tary\Desktop\2013.06.08提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\Popup\PopupMessageForm.g.i.cs
+C:\Users\Tary\Desktop\2013.06.08提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TaryPage.g.i.cs
+C:\Users\Tary\Desktop\2013.06.08提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\ButtonColorFORM.g.i.cs
+C:\Users\Tary\Desktop\2013.06.08提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.g.resources
+C:\Users\Tary\Desktop\2013.06.08提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.dll
+C:\Users\Tary\Desktop\2013.06.08提交\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Release\TARY_Library_Silverlight.pdb

@@ -1,0 +1,116 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="PhotoJ.makephoto"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape"  Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="728" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="False" BackKeyPress="PhoneApplicationPage_BackKeyPress" OrientationChanged="PhoneApplicationPage_OrientationChanged" Loaded="PhoneApplicationPage_Loaded" LayoutUpdated="PhoneApplicationPage_LayoutUpdated">
+
+    <!--LayoutRoot 是放置所有頁面的根資料格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        
+        <Grid x:Name="body" Visibility="Visible">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Images/bg3.png"/>
+            </Grid.Background>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <!--TitlePanel 包含應用程式的名稱和頁面標題-->
+            <!--ContentPanel - 其他內容置於此-->
+
+
+
+            <Grid  Grid.Row="0" Height="70" HorizontalAlignment="Left" Name="G_Image" VerticalAlignment="Top" Width="480" Visibility="Collapsed">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+                <ScrollViewer  Grid.Column="1" Name="VImagesBox"  VerticalScrollBarVisibility="Disabled" HorizontalScrollBarVisibility="Auto" >
+                    <StackPanel Height="70" Name="ImagesBox" Width="Auto" Orientation="Horizontal" />
+                </ScrollViewer>
+            </Grid>
+
+
+
+
+            <ScrollViewer Grid.Row="0" Height="70" HorizontalAlignment="Left" Name="G_Tool" VerticalAlignment="Top" Width="480" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Disabled">
+                <StackPanel Height="70" x:Name="MYTOOL" Width="Auto" Orientation="Horizontal">
+                    <Image Height="50" Name="image1" Stretch="Fill" Width="70" Source="/PhotoJ;component/image/t1.png" MouseLeftButtonUp="text_Click" />
+                    <Image Height="50" Name="image2" Source="/PhotoJ;component/image/t2.png" Stretch="Fill" Width="70" MouseLeftButtonUp="date_Click" />
+                    <Image Height="50" Name="image3" Source="/PhotoJ;component/image/t3.png" Stretch="Fill" Width="70" MouseLeftButtonUp="myImage_Click" />
+                    <Image Height="50" Name="image4" Source="/PhotoJ;component/image/t4.png" Stretch="Fill" Width="70" MouseLeftButtonUp="myphoto_Click" />
+                </StackPanel>
+            </ScrollViewer>
+
+            
+            
+
+
+            <StackPanel  Grid.Row="0" x:Name="G_Draw" Width="Auto" Orientation="Horizontal" Visibility="Collapsed">
+                <Button x:Name="pointSwitch" Content="開始" Click="pointSwitch_Click"/>
+            </StackPanel>
+
+
+            <ScrollViewer Grid.Row="1" Height="658" HorizontalAlignment="Left" Name="scrollPhoto" VerticalAlignment="Top" Width="480" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                <Canvas Name="PHOTO" VerticalAlignment="Center" HorizontalAlignment="Center">
+                </Canvas>
+
+            </ScrollViewer>
+
+
+
+            <Canvas Grid.Row="1" Name="PHOTO2" Width="480" Height="658" VerticalAlignment="Center" HorizontalAlignment="Center" >
+            </Canvas>
+
+
+
+            <Canvas Grid.Row="1" Name="PHOTO3" Width="480" Height="658" VerticalAlignment="Center" HorizontalAlignment="Center" >
+            </Canvas>
+
+
+        </Grid>
+
+
+
+        <Grid x:Name="ViewPhoto" Visibility="Collapsed">
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="/Images/bg3.png"/>
+            </Grid.Background>
+            <Image  HorizontalAlignment="Center" x:Name="viewImage" VerticalAlignment="Center"/>
+        </Grid>
+
+        <Image x:Name="IMG" Width="0" Height="0" ImageOpened="IMG_ImageOpened_1" />
+        
+    </Grid>
+
+
+
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+
+            <shell:ApplicationBarIconButton IconUri="/icon/toolbox.png" Text="工具箱" x:Name="Tool" Click="Tool_Click"  />
+            <shell:ApplicationBarIconButton IconUri="/icon/appbar.format.rest.png" Text="繪圖" x:Name="Draw" Click="Draw_Click" />
+            <shell:ApplicationBarIconButton IconUri="/ImagesLib/TaryPage/star.png" Text="圖庫" x:Name="Image" Click="Image_Click" />
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/appbar.save.rest.png" Text="儲存" x:Name="VIEW" Click="VIEW_Click" />
+            
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="合 併 圖"  x:Name="DIV" Click="DIV_Click" />
+                <shell:ApplicationBarMenuItem Text="重回合併圖"  x:Name="backDIV" IsEnabled="False" Click="backDIV_Click" />
+                <shell:ApplicationBarMenuItem Text="重頭開始"  x:Name="replay" Click="replay_Click"  />
+                <shell:ApplicationBarMenuItem Text="上傳至Facebook"  x:Name="facebook" Click="facebook_Click" />
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+</phone:PhoneApplicationPage>

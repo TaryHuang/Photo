@@ -1,0 +1,62 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="TARY_Library_Silverlight.ButtonDateFORM"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape"  Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="800" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="false" Loaded="PhoneApplicationPage_Loaded" OrientationChanged="PhoneApplicationPage_OrientationChanged_1">
+
+    <!--LayoutRoot 是放置所有頁面的根資料格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--TitlePanel 包含應用程式的名稱和頁面標題-->
+        <!--ContentPanel - 其他內容置於此-->
+        <Grid Height="491" HorizontalAlignment="Left" Margin="0,246,0,0" Name="BOX" VerticalAlignment="Top" Width="480">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="68"/>
+                <ColumnDefinition Width="68"/>
+                <ColumnDefinition Width="68"/>
+                <ColumnDefinition Width="68"/>
+                <ColumnDefinition Width="68"/>
+                <ColumnDefinition Width="68"/>
+                <ColumnDefinition Width="68"/>
+            </Grid.ColumnDefinitions>
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="68"/>
+                <RowDefinition Height="68"/>
+                <RowDefinition Height="68"/>
+                <RowDefinition Height="68"/>
+                <RowDefinition Height="68"/>
+                <RowDefinition Height="68"/>
+                <RowDefinition Height="68"/>
+            </Grid.RowDefinitions>
+        </Grid>
+        <Grid Height="92" HorizontalAlignment="Left" Margin="0,130,0,0" Name="Grid_Month" VerticalAlignment="Top" Width="480">
+
+        </Grid>
+        <Grid Height="104" HorizontalAlignment="Left" Name="Grid_Year" VerticalAlignment="Top" Width="480" Margin="0,10,0,0"></Grid>
+        <ListBox Height="650" HorizontalAlignment="Left" Margin="0,90,0,0" Name="yearBox" VerticalAlignment="Top" Width="480"  />
+        <TextBlock Height="82" HorizontalAlignment="Left"  Name="titleYear" Text="" VerticalAlignment="Top" FontSize="64"  />
+    </Grid>
+ 
+    <!--顯示 ApplicationBar 使用方式的程式碼範例-->
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button1.png" Text="按鈕 1"/>
+            <shell:ApplicationBarIconButton IconUri="/Images/appbar_button2.png" Text="按鈕 2"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="功能表項目 1"/>
+                <shell:ApplicationBarMenuItem Text="功能表項目 2"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>-->
+
+</phone:PhoneApplicationPage>

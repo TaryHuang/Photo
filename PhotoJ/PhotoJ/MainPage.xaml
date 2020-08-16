@@ -1,0 +1,84 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="PhotoJ.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False" BorderBrush="#FFEAA4A4" BackKeyPress="PhoneApplicationPage_BackKeyPress_1" Loaded="PhoneApplicationPage_Loaded_1" OrientationChanged="PhoneApplicationPage_OrientationChanged" LayoutUpdated="PhoneApplicationPage_LayoutUpdated">
+
+    <!--LayoutRoot 是放置所有頁面的根資料格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+
+        <Grid x:Name="MENU"  Grid.ColumnSpan="2" CacheMode="BitmapCache">
+            <StackPanel Height="220" HorizontalAlignment="Left" Margin="180,300,0,0" Name="MENU1" VerticalAlignment="Top" Width="290">
+                <Button x:Name="btnCamera" Content="速拍照片" Click="btnCamera_Click" FontSize="32" BorderBrush="Transparent" Foreground="#FFFFCB00" BorderThickness="0" FontWeight="Bold" />
+                <Button Content="從檔案選取"  Name="openPhoto" FontSize="32" BorderBrush="Transparent" Foreground="#FFFFCB00" BorderThickness="0" FontWeight="Bold" Click="openPhoto_Click" />
+                <Button Content="拼貼照片"  Name="test" FontSize="32" BorderBrush="Transparent" Foreground="#FFFFCB00" BorderThickness="0" FontWeight="Bold" Click="test_Click" />
+                
+            </StackPanel>
+            <StackPanel Height="244" HorizontalAlignment="Left" Margin="180,550,0,0" Name="MENU2" VerticalAlignment="Top" Width="290">
+                <Button BorderBrush="Transparent" Click="Fbtn_Click" Content="快 速 鍵" FontSize="32" Foreground="#FFFFCB00" Name="button3" BorderThickness="0" FontWeight="Bold" />
+                <Button BorderBrush="Transparent" Click="setupBtn_Click" Content="設　　定" FontSize="32" Foreground="#FFFFCB00" Name="button4" BorderThickness="0" FontWeight="Bold" />
+                <Button BorderBrush="Transparent" Click="author_Click" Content="關於作者" FontSize="32" Foreground="#FFFFCB00" Name="button5" BorderThickness="0" FontWeight="Bold" />
+            </StackPanel>
+            <Grid.Background>
+                <ImageBrush ImageSource="/PhotoJ;component/Images/BG1.png" />
+            </Grid.Background>
+        </Grid>
+        
+        
+        
+        <Grid x:Name="PHOTO"   Visibility="Collapsed" >
+            <Grid.Background>
+                <ImageBrush Stretch="UniformToFill" ImageSource="/Images/bg4.png"/>
+            </Grid.Background>
+        </Grid>
+        <Image x:Name="image1" ImageOpened="image1_ImageOpened"  Grid.ColumnSpan="2" Width="0" Height="0" Visibility="Collapsed" />
+
+        <Image x:Name="image2"  Grid.ColumnSpan="2" Width="0" Height="0" Visibility="Collapsed" />
+    </Grid>
+    
+    
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="False" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton x:Name="A_CTYPE" IconUri="/icon/appbar.photo.redeye.rest.png" Text="全景切換" Click="A_CTYPE_Click"  />
+            <shell:ApplicationBarIconButton x:Name="A_CUT" IconUri="/icon/Crop.png" Text="裁切" IsEnabled="False" Click="A_CUT_Click" />
+            <shell:ApplicationBarIconButton x:Name="A_TURN" IconUri="/icon/appbar.transport.repeat.rest.png" Text="旋轉"  Click="M_TURN_Click" />
+
+            <shell:ApplicationBarIconButton x:Name="M_EDIT" IconUri="/icon/appbar.edittext.rest.png" Text="編輯" Click="M_EDIT_Click"/>
+            <shell:ApplicationBar.MenuItems>
+
+                <shell:ApplicationBarMenuItem Text="亮   度"  x:Name="M_LIGHT" Click="M_LIGHT_Click" />
+                <shell:ApplicationBarMenuItem Text="對   比"  x:Name="M_Contrast" Click="M_Contrast_Click" />
+
+                <shell:ApplicationBarMenuItem Text="色彩調色"  x:Name="M_RGB" Click="M_RGB_Click" />
+
+                <shell:ApplicationBarMenuItem Text="特效風格"  x:Name="M_COLOR" Click="M_COLOR_Click" />
+                <shell:ApplicationBarMenuItem Text="馬賽克"  x:Name="M_MASK" Click="M_MASK_Click" />
+
+                <shell:ApplicationBarMenuItem Text="儲   存"  x:Name="M_SAVE" Click="M_SAVE_Click"  />
+                
+                
+                
+                <shell:ApplicationBarMenuItem Text="上傳至Facebook"  x:Name="M_FB" Click="M_FB_Click" />
+                
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+
+        
+    </phone:PhoneApplicationPage.ApplicationBar>
+    
+    
+</phone:PhoneApplicationPage>
+
+
+
+
+    

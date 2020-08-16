@@ -1,0 +1,34 @@
+c:\users\user\documents\visual studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Debug\TARY_Library_Silverlight.dll
+c:\users\user\documents\visual studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Debug\TARY_Library_Silverlight.pdb
+c:\users\user\documents\visual studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\ResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\TARY_Library_Silverlight.dll
+c:\users\user\documents\visual studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\TARY_Library_Silverlight.pdb
+C:\Users\USER\Documents\Visual Studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\TARY_Library_Silverlight.g.resources
+C:\Users\USER\documents\visual studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\ButtonListFORM.g.i.cs
+C:\Users\USER\documents\visual studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\USER\documents\visual studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\USER\documents\visual studio 2010\Projects\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\TaryPage.g.i.cs
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Debug\TARY_Library_Silverlight.dll
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Debug\TARY_Library_Silverlight.pdb
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Debug\Microsoft.Phone.Controls.dll
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Debug\Microsoft.Phone.Controls.xml
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\ResolveAssemblyReference.cache
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\ButtonListFORM.g.i.cs
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\TaryPage.g.i.cs
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\TARY_Library_Silverlight.g.resources
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\TARY_Library_Silverlight.dll
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\TARY_Library_Silverlight.pdb
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\ButtonDateFORM.g.i.cs
+D:\win8資源\專案\2013.01.12\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\Page1.g.i.cs
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Debug\TARY_Library_Silverlight.dll
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Debug\TARY_Library_Silverlight.pdb
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Debug\Microsoft.Phone.Controls.dll
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Debug\Microsoft.Phone.Controls.xml
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\ButtonDateFORM.g.cs
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\ButtonListFORM.g.cs
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\Page1.g.cs
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\TaryPage.g.cs
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\ButtonColorFORM.g.cs
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\TARY_Library_Silverlight.g.resources
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\TARY_Library_Silverlight.dll
+C:\Users\Administrator\Desktop\TARY_Library_Silverlight\TARY_Library_Silverlight\obj\Debug\TARY_Library_Silverlight.pdb

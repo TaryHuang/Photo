@@ -1,0 +1,905 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A1E5BF74-A700-4227-96A4-171B993B28BC}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PhotoJ</RootNamespace>
+    <AssemblyName>PhotoJ</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>PhotoJ.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>PhotoJ.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Facebook">
+      <HintPath>..\..\Facebook.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Microsoft.Xna.Framework" />
+    <Reference Include="system.data.linq" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+    <Reference Include="TARY_Library_Silverlight">
+      <HintPath>..\..\TARY_Library_Silverlight\TARY_Library_Silverlight\Bin\Release\TARY_Library_Silverlight.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addOBJtext.xaml.cs">
+      <DependentUpon>addOBJtext.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DB\DBHandler.cs" />
+    <Compile Include="DB\SetupTable.cs" />
+    <Compile Include="DB\FastTable.cs" />
+    <Compile Include="DB\ObjTextTable.cs" />
+    <Compile Include="DB\ObjDateTable.cs" />
+    <Compile Include="DB\ObjPhotoTable.cs" />
+    <Compile Include="DrawBoard.cs" />
+    <Compile Include="FAST.xaml.cs">
+      <DependentUpon>FAST.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FastAdd.xaml.cs">
+      <DependentUpon>FastAdd.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="imgList.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="makephoto.xaml.cs">
+      <DependentUpon>makephoto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyOBJ.cs" />
+    <Compile Include="objList.cs" />
+    <Compile Include="Page1.xaml.cs">
+      <DependentUpon>Page1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page2.xaml.cs">
+      <DependentUpon>Page2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Page3.xaml.cs">
+      <DependentUpon>Page3.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\FacebookLoginPage.xaml.cs">
+      <DependentUpon>FacebookLoginPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="photo\PhotoView.cs" />
+    <Compile Include="photo\PhotoViewer.cs" />
+    <Compile Include="photo\Photo_P1.cs" />
+    <Compile Include="photo\Photo_P2.cs" />
+    <Compile Include="photo\Photo_P3.cs" />
+    <Compile Include="photo\Photo_P4.cs" />
+    <Compile Include="photo\Photo_P5.cs" />
+    <Compile Include="photo\Photo_P6.cs" />
+    <Compile Include="photo\Photo_P7.cs" />
+    <Compile Include="photo\Photo_P8.cs" />
+    <Compile Include="photo\Photo_L1.cs" />
+    <Compile Include="photo\Photo_L2.cs" />
+    <Compile Include="photo\Photo_L3.cs" />
+    <Compile Include="photo\Photo_L4.cs" />
+    <Compile Include="photo\Photo_L5.cs" />
+    <Compile Include="photo\Photo_L6.cs" />
+    <Compile Include="photo\Photo_L7.cs" />
+    <Compile Include="photo\Photo_L8.cs" />
+    <Compile Include="photo\Photo_S0.cs" />
+    <Compile Include="selectType.xaml.cs">
+      <DependentUpon>selectType.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MyOBJText.cs" />
+    <Compile Include="addOBJdate.xaml.cs">
+      <DependentUpon>addOBJdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MyOBJdraw.cs" />
+    <Compile Include="selectTypeList.cs" />
+    <Compile Include="setLight.xaml.cs">
+      <DependentUpon>setLight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="setup.xaml.cs">
+      <DependentUpon>setup.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FastOBJtext.xaml.cs">
+      <DependentUpon>FastOBJtext.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FastOBJdate.xaml.cs">
+      <DependentUpon>FastOBJdate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FastOBJphoto.xaml.cs">
+      <DependentUpon>FastOBJphoto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="addOBJphoto.xaml.cs">
+      <DependentUpon>addOBJphoto.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SignList.cs" />
+    <Compile Include="style.cs" />
+    <Compile Include="Window.xaml.cs">
+      <DependentUpon>Window.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="setRgb.xaml.cs">
+      <DependentUpon>setRgb.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="setContrast.xaml.cs">
+      <DependentUpon>setContrast.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="setStyle.xaml.cs">
+      <DependentUpon>setStyle.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="maskList.cs" />
+    <Compile Include="MASK.xaml.cs">
+      <DependentUpon>MASK.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="addOBJtext.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FAST.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FastAdd.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="makephoto.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="addOBJdate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Page1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Page3.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\FacebookLoginPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="selectType.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="setLight.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="setup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FastOBJtext.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FastOBJdate.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FastOBJphoto.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="addOBJphoto.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="setRgb.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="setContrast.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="setStyle.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MASK.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\AppBar\appbar.edit.rest.png" />
+    <Content Include="Assets\AppBar\appbar.favs.addto.rest.png" />
+    <Content Include="Assets\AppBar\appbar.save.rest.png" />
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="image\mask\M\L37.png" />
+    <Resource Include="image\mask\M\L38.png" />
+    <Resource Include="image\mask\M\L39.png" />
+    <Resource Include="image\mask\M\L40.png" />
+    <Resource Include="image\mask\M\L41.png" />
+    <Resource Include="image\mask\M\L42.png" />
+    <Resource Include="image\mask\M\L18.png" />
+    <Resource Include="image\birthday\cake01.png" />
+    <Resource Include="image\birthday\cake02.png" />
+    <Resource Include="image\birthday\cake03.png" />
+    <Resource Include="image\birthday\cake04.png" />
+    <Resource Include="image\birthday\cake05.png" />
+    <Resource Include="image\birthday\cake06.png" />
+    <Resource Include="image\birthday\cake07.png" />
+    <Resource Include="image\birthday\gift01.png" />
+    <Resource Include="image\birthday\gift02.png" />
+    <Resource Include="image\birthday\gift03.png" />
+    <Resource Include="image\birthday\gift04.png" />
+    <Resource Include="image\birthday\gift05.png" />
+    <Resource Include="image\cute\a001.png" />
+    <Resource Include="image\cute\a002.png" />
+    <Resource Include="image\cute\a003.png" />
+    <Resource Include="image\cute\b1.png" />
+    <Resource Include="image\cute\b2.png" />
+    <Resource Include="image\cute\C1.png" />
+    <Resource Include="image\cute\C2.png" />
+    <Resource Include="image\cute\C3.png" />
+    <Resource Include="image\cute\C4.png" />
+    <Resource Include="image\cute\knot00.png" />
+    <Resource Include="image\cute\knot01.png" />
+    <Resource Include="image\cute\knot02.png" />
+    <Resource Include="image\cute\knot03.png" />
+    <Resource Include="image\cute\knot04.png" />
+    <Resource Include="image\cute\Lip01.png" />
+    <Resource Include="image\cute\Lip02.png" />
+    <Resource Include="image\cute\love0.png" />
+    <Resource Include="image\cute\love1.png" />
+    <Resource Include="image\cute\love10.PNG" />
+    <Resource Include="image\cute\love2.png" />
+    <Resource Include="image\cute\love3.png" />
+    <Resource Include="image\cute\love4.png" />
+    <Resource Include="image\cute\love5.png" />
+    <Resource Include="image\cute\love6.png" />
+    <Resource Include="image\cute\love7.png" />
+    <Resource Include="image\cute\P1.png" />
+    <Resource Include="image\cute\pin1.png" />
+    <Resource Include="image\cute\pin2.png" />
+    <Resource Include="image\cute\pin3.png" />
+    <Resource Include="image\cute\pin4.png" />
+    <Resource Include="image\cute\pin5.png" />
+    <Resource Include="image\cute\pin6.png" />
+    <Resource Include="image\cute\star1.png" />
+    <Resource Include="image\cute\star2.png" />
+    <Resource Include="image\cute\star3.png" />
+    <Resource Include="image\cute\star4.png" />
+    <Resource Include="image\cute\star5.png" />
+    <Resource Include="image\cute\star6.png" />
+    <Resource Include="image\cute\star7.png" />
+    <Resource Include="image\cute\star8.png" />
+    <Resource Include="image\cute\z1.png" />
+    <Resource Include="image\cute\z2.png" />
+    <Resource Include="image\cute\z3.png" />
+    <Resource Include="image\cute\z4.png" />
+    <Resource Include="image\cute\z5.png" />
+    <Resource Include="image\Firework\a01.png" />
+    <Resource Include="image\Firework\a02.png" />
+    <Resource Include="image\Firework\a03.png" />
+    <Resource Include="image\Firework\a04.png" />
+    <Resource Include="image\Firework\a05.png" />
+    <Resource Include="image\Firework\a06.png" />
+    <Resource Include="image\Firework\a07.png" />
+    <Resource Include="image\Firework\a08.png" />
+    <Resource Include="image\Firework\a09.png" />
+    <Resource Include="image\Firework\a10.png" />
+    <Resource Include="image\Firework\a11.png" />
+    <Resource Include="image\Firework\a12.png" />
+    <Resource Include="image\Firework\a13.png" />
+    <Resource Include="image\Firework\b01.png" />
+    <Resource Include="image\Firework\b02.png" />
+    <Resource Include="image\Firework\b03.png" />
+    <Resource Include="image\Firework\b04.png" />
+    <Resource Include="image\flower\a00.png" />
+    <Resource Include="image\flower\a01.png" />
+    <Resource Include="image\flower\a02.png" />
+    <Resource Include="image\flower\a03.png" />
+    <Resource Include="image\flower\a04.png" />
+    <Resource Include="image\flower\a05.png" />
+    <Resource Include="image\flower\a06.png" />
+    <Resource Include="image\flower\a08.png" />
+    <Resource Include="image\flower\b01.png" />
+    <Resource Include="image\flower\c01.png" />
+    <Resource Include="image\flower\c02.png" />
+    <Resource Include="image\flower\c03.png" />
+    <Resource Include="image\flower\c04.png" />
+    <Resource Include="image\FOOD\a01.png" />
+    <Resource Include="image\FOOD\a02.png" />
+    <Resource Include="image\FOOD\a03.png" />
+    <Resource Include="image\FOOD\a04.png" />
+    <Resource Include="image\FOOD\a05.png" />
+    <Resource Include="image\FOOD\a06.png" />
+    <Resource Include="image\FOOD\a07.png" />
+    <Resource Include="image\FOOD\a08.png" />
+    <Resource Include="image\FOOD\a09.png" />
+    <Resource Include="image\FOOD\b01.png" />
+    <Resource Include="image\FOOD\b02.png" />
+    <Resource Include="image\FOOD\b03.png" />
+    <Resource Include="image\FOOD\c01.png" />
+    <Resource Include="image\FOOD\c02.png" />
+    <Resource Include="image\FOOD\c03.png" />
+    <Resource Include="image\FOOD\c04.png" />
+    <Resource Include="image\FOOD\C05.png" />
+    <Resource Include="image\FOOD\C06.PNG" />
+    <Resource Include="image\FOOD\C07.png" />
+    <Resource Include="image\FOOD\C08.png" />
+    <Resource Include="image\FOOD\C09.png" />
+    <Resource Include="image\FOOD\C10.png" />
+    <Resource Include="image\FOOD\C11.png" />
+    <Resource Include="image\ghost\A1.png" />
+    <Resource Include="image\ghost\A2.png" />
+    <Resource Include="image\ghost\A3.png" />
+    <Resource Include="image\ghost\A4.png" />
+    <Resource Include="image\ghost\B1.png" />
+    <Resource Include="image\ghost\B2.png" />
+    <Resource Include="image\ghost\B3.png" />
+    <Resource Include="image\ghost\B4.png" />
+    <Resource Include="image\ghost\C1.png" />
+    <Resource Include="image\ghost\C2.png" />
+    <Resource Include="image\ghost\C3.png" />
+    <Resource Include="image\ghost\P1.png" />
+    <Resource Include="image\ghost\P10.png" />
+    <Resource Include="image\ghost\P12.png" />
+    <Resource Include="image\ghost\P13.png" />
+    <Resource Include="image\ghost\P14.png" />
+    <Resource Include="image\ghost\P15.png" />
+    <Resource Include="image\ghost\P2.png" />
+    <Resource Include="image\ghost\P3.png" />
+    <Resource Include="image\ghost\P4.png" />
+    <Resource Include="image\ghost\P5.png" />
+    <Resource Include="image\ghost\P6.png" />
+    <Resource Include="image\ghost\P7.png" />
+    <Resource Include="image\ghost\P8.png" />
+    <Resource Include="image\ghost\P9.png" />
+    <Resource Include="image\ghost\V1.png" />
+    <Resource Include="image\ghost\V2.png" />
+    <Resource Include="image\ghost\V3.png" />
+    <Resource Include="image\ghost\V4.png" />
+    <Resource Include="image\ghost\V5.png" />
+    <Resource Include="image\ghost\V6.png" />
+    <Resource Include="image\ghost\V7.png" />
+    <Resource Include="image\ghost\V8.png" />
+    <Resource Include="image\ghost\V9.png" />
+    <Resource Include="image\ghost\Z1.png" />
+    <Resource Include="image\ghost\Z2.png" />
+    <Resource Include="image\ghost\Z3.png" />
+    <Resource Include="image\ghost\Z4.png" />
+    <Resource Include="image\mark\a01.png" />
+    <Resource Include="image\mark\a02.png" />
+    <Resource Include="image\mark\a03.png" />
+    <Resource Include="image\mark\a04.png" />
+    <Resource Include="image\mark\a05.png" />
+    <Resource Include="image\mark\a06.png" />
+    <Resource Include="image\mark\a07.png" />
+    <Resource Include="image\mark\a08.png" />
+    <Resource Include="image\mark\h01.png" />
+    <Resource Include="image\mark\h02.png" />
+    <Resource Include="image\mark\h03.png" />
+    <Resource Include="image\mark\h04.png" />
+    <Resource Include="image\mark\h05.png" />
+    <Resource Include="image\mark\h06.png" />
+    <Resource Include="image\mark\h07.png" />
+    <Resource Include="image\mark\h08.png" />
+    <Resource Include="image\mark\h09.png" />
+    <Resource Include="image\mark\h10.png" />
+    <Resource Include="image\mark\h11.png" />
+    <Resource Include="image\mark\h12.png" />
+    <Resource Include="image\mark\h13.png" />
+    <Resource Include="image\mark\h14.png" />
+    <Resource Include="image\mark\Z01.png" />
+    <Resource Include="image\mask\V37.png" />
+    <Resource Include="image\mask\V38.png" />
+    <Resource Include="image\mask\V39.png" />
+    <Resource Include="image\mask\V40.png" />
+    <Resource Include="image\mask\V41.png" />
+    <Resource Include="image\mask\V42.png" />
+    <Resource Include="Images\V.png" />
+    <Resource Include="image\mask\M\L7.png" />
+    <Resource Include="image\mask\M\L29.png" />
+    <Resource Include="image\mask\M\L30.png" />
+    <Resource Include="image\mask\M\L31.png" />
+    <Resource Include="image\mask\M\L32.png" />
+    <Resource Include="image\mask\M\L33.png" />
+    <Resource Include="image\mask\M\L34.png" />
+    <Resource Include="image\mask\M\L35.png" />
+    <Resource Include="image\mask\M\L36.png" />
+    <Resource Include="image\mask\V34.png" />
+    <Resource Include="image\mask\V35.png" />
+    <Resource Include="image\mask\V36.png" />
+    <Resource Include="image\mask\V18.png" />
+    <Resource Include="image\mask\V29.png" />
+    <Resource Include="image\mask\V30.png" />
+    <Resource Include="image\mask\V31.png" />
+    <Resource Include="image\mask\V32.png" />
+    <Resource Include="image\mask\V33.png" />
+    <Resource Include="image\null.png" />
+    <Resource Include="image\mask\V24.png" />
+    <Resource Include="image\mask\V19.png" />
+    <Resource Include="image\mask\V20.png" />
+    <Resource Include="image\mask\V21.png" />
+    <Resource Include="image\mask\V22.png" />
+    <Resource Include="image\mask\V23.png" />
+    <Resource Include="image\mask\V25.png" />
+    <Resource Include="image\mask\V26.png" />
+    <Resource Include="image\mask\V27.png" />
+    <Resource Include="image\mask\V28.png" />
+    <Resource Include="image\mask\M\L28.png" />
+    <Resource Include="image\thing\p3.png" />
+    <Resource Include="image\sign\V5.png" />
+    <Resource Include="image\sign\V4.png" />
+    <Resource Include="image\sign\V6.png" />
+    <Resource Include="image\sign\wL1.png" />
+    <Resource Include="image\sign\wL2.png" />
+    <Resource Include="image\sign\wL3.png" />
+    <Resource Include="image\sign\wM3.png" />
+    <Resource Include="image\sign\wM1.png" />
+    <Resource Include="image\sign\wM2.png" />
+    <Resource Include="image\sign\wS1.png" />
+    <Resource Include="image\sign\wS2.png" />
+    <Resource Include="image\sign\wS3.png" />
+    <Resource Include="image\thing\p2.png" />
+    <Resource Include="image\1.png" />
+    <Resource Include="image\2.png" />
+    <Resource Include="image\3.PNG" />
+    <Content Include="icon\appbar.activate.rest.png" />
+    <Content Include="icon\appbar.addcomment.rest.png" />
+    <Content Include="icon\appbar.addnotes.rest.png" />
+    <Content Include="icon\appbar.addpicture.rest.png" />
+    <Content Include="icon\appbar.addtag.rest.png" />
+    <Content Include="icon\appbar.alarmclock.rest.png" />
+    <Content Include="icon\appbar.animal.cat.rest.png" />
+    <Content Include="icon\appbar.animal.dog.rest.png" />
+    <Content Include="icon\appbar.animal.sheep.rest.png" />
+    <Content Include="icon\appbar.animal.snail.rest.png" />
+    <Content Include="icon\appbar.at.rest.png" />
+    <Content Include="icon\appbar.attach.rest.png" />
+    <Content Include="icon\appbar.audio.rest.png" />
+    <Content Include="icon\appbar.calendar.late.rest.png" />
+    <Content Include="icon\appbar.car.rest.png" />
+    <Content Include="icon\appbar.cellphone.rest.png" />
+    <Content Include="icon\appbar.drink.beer.rest.png" />
+    <Content Include="icon\appbar.drink.cocktail.rest.png" />
+    <Content Include="icon\appbar.drink.coffee.rest.png" />
+    <Content Include="icon\appbar.edittext.rest.png" />
+    <Content Include="icon\appbar.favs.removefrom.rest.png" />
+    <Content Include="icon\appbar.feature.frontcamera.rest.png" />
+    <Content Include="icon\appbar.folder.rest.png" />
+    <Content Include="icon\appbar.food.cake.rest.png" />
+    <Content Include="icon\appbar.food.pizza.rest.png" />
+    <Content Include="icon\appbar.format.rest.png" />
+    <Content Include="icon\appbar.game.achievements.rest.png" />
+    <Content Include="icon\appbar.game.addfriend.rest.png" />
+    <Content Include="icon\appbar.game.removefriend.rest.png" />
+    <Content Include="icon\appbar.gotoaddressbar.rest.png" />
+    <Content Include="icon\appbar.gotodate.rest.png" />
+    <Content Include="icon\appbar.gotoslide.rest.png" />
+    <Content Include="icon\appbar.goup.rest.png" />
+    <Content Include="icon\appbar.heart.broken.rest.png" />
+    <Content Include="icon\appbar.heart.rest.png" />
+    <Content Include="icon\appbar.heart2.broken.rest.png" />
+    <Content Include="icon\appbar.heart2.empty.rest.png" />
+    <Content Include="icon\appbar.heart2.rest.png" />
+    <Content Include="icon\appbar.keyboard.rest.png" />
+    <Content Include="icon\appbar.lamp.rest.png" />
+    <Content Include="icon\appbar.linkto.rest.png" />
+    <Content Include="icon\appbar.linkto.withlinks.rest.png" />
+    <Content Include="icon\appbar.lips.rest.png" />
+    <Content Include="icon\appbar.lock.rest.png" />
+    <Content Include="icon\appbar.manage.rest.png" />
+    <Content Include="icon\appbar.map.centerme.rest.png" />
+    <Content Include="icon\appbar.map.checkin.rest.png" />
+    <Content Include="icon\appbar.map.direction.rest.png" />
+    <Content Include="icon\appbar.map.neighboorhood.rest.png" />
+    <Content Include="icon\appbar.map.poi.rest.png" />
+    <Content Include="icon\appbar.map.position.rest.png" />
+    <Content Include="icon\appbar.mic.mute.rest.png" />
+    <Content Include="icon\appbar.mic.rest.png" />
+    <Content Include="icon\appbar.money.rest.png" />
+    <Content Include="icon\appbar.movetofolder.rest.png" />
+    <Content Include="icon\appbar.music.shuffle.rest.png" />
+    <Content Include="icon\appbar.notes.rest.png" />
+    <Content Include="icon\appbar.numberlist.rest.png" />
+    <Content Include="icon\appbar.palmtree.rest.png" />
+    <Content Include="icon\appbar.people.1.rest.png" />
+    <Content Include="icon\appbar.people.2.rest.png" />
+    <Content Include="icon\appbar.phone.asterisk.rest.png" />
+    <Content Include="icon\appbar.phone.numbersign.rest.png" />
+    <Content Include="icon\appbar.phone.rest.png" />
+    <Content Include="icon\appbar.phonebook.rest.png" />
+    <Content Include="icon\appbar.phonekeys.rest.png" />
+    <Content Include="icon\appbar.photo.autoflash.rest.png" />
+    <Content Include="icon\appbar.photo.fix.rest.png" />
+    <Content Include="icon\appbar.photo.fixundo.rest.png" />
+    <Content Include="icon\appbar.photo.flash.rest.png" />
+    <Content Include="icon\appbar.photo.iris.rest.png" />
+    <Content Include="icon\appbar.photo.light.rest.png" />
+    <Content Include="icon\appbar.photo.noflash.rest.png" />
+    <Content Include="icon\appbar.photo.nolight.rest.png" />
+    <Content Include="icon\appbar.photo.redeye.rest.png" />
+    <Content Include="icon\appbar.pin.rest.png" />
+    <Content Include="icon\appbar.plane.rest.png" />
+    <Content Include="icon\appbar.replymeetingrequest.rest.png" />
+    <Content Include="icon\appbar.repond.rest.png" />
+    <Content Include="icon\appbar.rose.dimmed.rest.png" />
+    <Content Include="icon\appbar.rose.rest.png" />
+    <Content Include="icon\appbar.search.refine.rest.png" />
+    <Content Include="icon\appbar.send.photo.rest.png" />
+    <Content Include="icon\appbar.send.text.rest.png" />
+    <Content Include="icon\appbar.send.video.rest.png" />
+    <Content Include="icon\appbar.sendmessage.rest.png" />
+    <Content Include="icon\appbar.sendpoi.rest.png" />
+    <Content Include="icon\appbar.smile.1.rest.png" />
+    <Content Include="icon\appbar.smile.10.rest.png" />
+    <Content Include="icon\appbar.smile.11.rest.png" />
+    <Content Include="icon\appbar.smile.12.rest.png" />
+    <Content Include="icon\appbar.smile.13.rest.png" />
+    <Content Include="icon\appbar.smile.14.rest.png" />
+    <Content Include="icon\appbar.smile.15.rest.png" />
+    <Content Include="icon\appbar.smile.16.rest.png" />
+    <Content Include="icon\appbar.smile.17.rest.png" />
+    <Content Include="icon\appbar.smile.18.rest.png" />
+    <Content Include="icon\appbar.smile.19.rest.png" />
+    <Content Include="icon\appbar.smile.2.rest.png" />
+    <Content Include="icon\appbar.smile.20.rest.png" />
+    <Content Include="icon\appbar.smile.21.rest.png" />
+    <Content Include="icon\appbar.smile.22.rest.png" />
+    <Content Include="icon\appbar.smile.23.rest.png" />
+    <Content Include="icon\appbar.smile.3.rest.png" />
+    <Content Include="icon\appbar.smile.4.rest.png" />
+    <Content Include="icon\appbar.smile.5.rest.png" />
+    <Content Include="icon\appbar.smile.6.rest.png" />
+    <Content Include="icon\appbar.smile.7.rest.png" />
+    <Content Include="icon\appbar.smile.8.rest.png" />
+    <Content Include="icon\appbar.smile.9.rest.png" />
+    <Content Include="icon\appbar.social.like.rest.png" />
+    <Content Include="icon\appbar.social.retweet.rest.png" />
+    <Content Include="icon\appbar.social.unlike.rest.png" />
+    <Content Include="icon\appbar.speaker.rest.png" />
+    <Content Include="icon\appbar.status.rest.png" />
+    <Content Include="icon\appbar.switch.rest.png" />
+    <Content Include="icon\appbar.tabs.2.rest.png" />
+    <Content Include="icon\appbar.tabs.3.rest.png" />
+    <Content Include="icon\appbar.tabs.4.rest.png" />
+    <Content Include="icon\appbar.tabs.5.rest.png" />
+    <Content Include="icon\appbar.tabs.6.rest.png" />
+    <Content Include="icon\appbar.tabs.rest.png" />
+    <Content Include="icon\appbar.task.complete.rest.png" />
+    <Content Include="icon\appbar.time.rest.png" />
+    <Content Include="icon\appbar.transport.repeat.rest.png" />
+    <Content Include="icon\appbar.transport.repeatone.rest.png" />
+    <Content Include="icon\appbar.transport.shuffle.rest.png" />
+    <Content Include="icon\appbar.voicemail.rest.png" />
+    <Content Include="icon\appbar.weather.moon.rest.png" />
+    <Content Include="icon\appbar.weather.rainbow.rest.png" />
+    <Content Include="icon\appbar.weather.sun.rest.png" />
+    <Content Include="icon\appbar.weather.umbrella.rest.png" />
+    <Content Include="icon\Crop.png" />
+    <Content Include="icon\toolbox.png" />
+    <Content Include="icon\Windows Phone 7 Application Bar Icons.png" />
+    <Content Include="ImagesLib\TaryPage\people.png" />
+    <Content Include="ImagesLib\TaryPage\star.png" />
+    <Content Include="ImagesLib\TaryPage\star2.png" />
+    <Content Include="ImagesLib\TaryPage\unlock.png" />
+    <Resource Include="Images\BG1.png" />
+    <Resource Include="Images\BG2.png" />
+    <Resource Include="image\A03.png" />
+    <Resource Include="image\A04.png" />
+    <Resource Include="image\A05.png" />
+    <Resource Include="image\t1.png" />
+    <Resource Include="image\t2.png" />
+    <Resource Include="image\t3.png" />
+    <Resource Include="image\t4.png" />
+    <Resource Include="Images\background\a01.png" />
+    <Resource Include="Images\background\a02.png" />
+    <Resource Include="Images\background\a03.png" />
+    <Resource Include="Images\background\a04.png" />
+    <Resource Include="Images\background\a05.png" />
+    <Resource Include="Images\background\a06.png" />
+    <Resource Include="Images\background\a07.png" />
+    <Resource Include="Images\background\a08.png" />
+    <Resource Include="Images\background\a09.png" />
+    <Resource Include="Images\background\a10.png" />
+    <Resource Include="Images\background\a11.png" />
+    <Resource Include="Images\background\a12.jpg" />
+    <Resource Include="Images\background\a20.png" />
+    <Resource Include="Images\background\a21.png" />
+    <Resource Include="Images\background\a22.png" />
+    <Resource Include="Images\background\a23.png" />
+    <Resource Include="Images\background\a24.png" />
+    <Resource Include="Images\background\a25.png" />
+    <Resource Include="Images\background\a26.jpg" />
+    <Resource Include="Images\background\a26.png" />
+    <Resource Include="Images\background\b01.png" />
+    <Resource Include="Images\background\b02.png" />
+    <Resource Include="Images\background\b03.png" />
+    <Resource Include="Images\background\b04.png" />
+    <Resource Include="Images\background\c01.png" />
+    <Resource Include="Images\background\c02.png" />
+    <Resource Include="Images\background\c03.png" />
+    <Resource Include="Images\background\c04.png" />
+    <Resource Include="Images\background\c05.png" />
+    <Resource Include="Images\background\c06.png" />
+    <Resource Include="Images\background\c07.png" />
+    <Resource Include="Images\background\c08.png" />
+    <Resource Include="Images\background\D01.jpg" />
+    <Resource Include="Images\background\D02.jpg" />
+    <Resource Include="Images\background\D03.jpg" />
+    <Resource Include="Images\background\D04.jpg" />
+    <Resource Include="Images\background\D05.jpg" />
+    <Resource Include="Images\background\D06.jpg" />
+    <Resource Include="Images\background\D07.jpg" />
+    <Resource Include="Images\background\D08.jpg" />
+    <Resource Include="Images\background\D09.jpg" />
+    <Resource Include="Images\background\D10.jpg" />
+    <Resource Include="Images\background\D11.jpg" />
+    <Resource Include="Images\background\E01.jpg" />
+    <Resource Include="Images\background\E02.jpg" />
+    <Resource Include="Images\background\null.png" />
+    <Content Include="Images\bg3.png" />
+    <Content Include="Images\bg4.png" />
+    <Content Include="Images\L\L4G.png" />
+    <Content Include="Images\L\L4A.png" />
+    <Content Include="Images\L\L4B.png" />
+    <Content Include="Images\L\L4C.png" />
+    <Content Include="Images\L\L4D.png" />
+    <Content Include="Images\L\L4E.png" />
+    <Content Include="Images\L\L4F.png" />
+    <Content Include="Images\L\L3G.png" />
+    <Content Include="Images\L\L3A.png" />
+    <Content Include="Images\L\L3B.png" />
+    <Content Include="Images\L\L3C.png" />
+    <Content Include="Images\L\L3D.png" />
+    <Content Include="Images\L\L3E.png" />
+    <Content Include="Images\L\L3F.png" />
+    <Content Include="Images\L\L4I.png" />
+    <Content Include="Images\L\L5A.png" />
+    <Content Include="Images\L\L5B.png" />
+    <Content Include="Images\L\L5C.png" />
+    <Content Include="Images\L\L5D.png" />
+    <Content Include="Images\L\L5E.png" />
+    <Content Include="Images\L\L5F.png" />
+    <Content Include="Images\L\L5G.png" />
+    <Content Include="Images\L\L6A.png" />
+    <Content Include="Images\L\L6B.png" />
+    <Content Include="Images\L\L6C.png" />
+    <Content Include="Images\L\L6D.png" />
+    <Content Include="Images\L\L7A.png" />
+    <Content Include="Images\L\L7B.png" />
+    <Content Include="Images\L\L7C.png" />
+    <Content Include="Images\L\L7D.png" />
+    <Content Include="Images\L\L7E.png" />
+    <Content Include="Images\L\L7F.png" />
+    <Content Include="Images\L\L8A.png" />
+    <Content Include="Images\L\L3H.png" />
+    <Content Include="Images\L\L4H.png" />
+    <Content Include="Images\nullIMG.png" />
+    <Content Include="Images\P\P1A.png" />
+    <Content Include="Images\P\P1D.png" />
+    <Content Include="Images\P\P1F.png" />
+    <Content Include="Images\P\P1E.png" />
+    <Content Include="Images\P\P1G.png" />
+    <Content Include="Images\P\P1B.png" />
+    <Content Include="Images\P\P1C.png" />
+    <Content Include="Images\P\P2B.png" />
+    <Content Include="Images\P\P2A.png" />
+    <Content Include="Images\P\P2D.png" />
+    <Content Include="Images\P\P2E.png" />
+    <Content Include="Images\P\P2F.png" />
+    <Content Include="Images\P\P2C.png" />
+    <Content Include="Images\P\P3A.png" />
+    <Content Include="Images\P\P3B.png" />
+    <Content Include="Images\P\P3C.png" />
+    <Content Include="Images\P\P3D.png" />
+    <Content Include="Images\P\P3E.png" />
+    <Content Include="Images\P\P3F.png" />
+    <Content Include="Images\P\P3H.png" />
+    <Content Include="Images\P\P3G.png" />
+    <Content Include="Images\P\P3I.png" />
+    <Content Include="Images\P\P3J.png" />
+    <Content Include="Images\P\P3K.png" />
+    <Content Include="Images\P\P3L.png" />
+    <Content Include="Images\P\P4A.png" />
+    <Content Include="Images\P\P4B.png" />
+    <Content Include="Images\P\P4C.png" />
+    <Content Include="Images\P\P4D.png" />
+    <Content Include="Images\P\P4E.png" />
+    <Content Include="Images\P\P4F.png" />
+    <Content Include="Images\P\P4G.png" />
+    <Content Include="Images\P\P4H.png" />
+    <Content Include="Images\P\P5A.png" />
+    <Content Include="Images\P\P5B.png" />
+    <Content Include="Images\P\P5C.png" />
+    <Content Include="Images\P\P5D.png" />
+    <Content Include="Images\P\P5E.png" />
+    <Content Include="Images\P\P5F.png" />
+    <Content Include="Images\P\P5G.png" />
+    <Content Include="Images\P\P5H.png" />
+    <Content Include="Images\P\P6A.png" />
+    <Content Include="Images\P\P6B.png" />
+    <Content Include="Images\P\P6C.png" />
+    <Content Include="Images\P\P6D.png" />
+    <Content Include="Images\P\P6E.png" />
+    <Content Include="Images\P\P6F.png" />
+    <Content Include="Images\P\P6G.png" />
+    <Content Include="Images\P\P6H.png" />
+    <Content Include="Images\P\P7A.png" />
+    <Content Include="Images\P\P7B.png" />
+    <Content Include="Images\P\P7C.png" />
+    <Content Include="Images\P\P7D.png" />
+    <Content Include="Images\P\P7E.png" />
+    <Content Include="Images\P\P7F.png" />
+    <Content Include="Images\P\P7G.png" />
+    <Content Include="Images\P\P7H.png" />
+    <Content Include="Images\P\P8A.png" />
+    <Content Include="Images\P\P8B.png" />
+    <Content Include="Images\P\P8C.png" />
+    <Content Include="Images\P\P8D.png" />
+    <Content Include="Images\P\P8E.png" />
+    <Content Include="Images\P\P8F.png" />
+    <Content Include="Images\P\P8G.png" />
+    <Content Include="Images\P\P8H.png" />
+    <Content Include="Images\L\L1A.png" />
+    <Content Include="Images\L\L1B.png" />
+    <Content Include="Images\L\L1C.png" />
+    <Content Include="Images\L\L1D.png" />
+    <Content Include="Images\L\L1E.png" />
+    <Content Include="Images\L\L1F.png" />
+    <Content Include="Images\L\L2A.png" />
+    <Content Include="Images\L\L2B.png" />
+    <Content Include="Images\L\L2C.png" />
+    <Content Include="Images\L\L2D.png" />
+    <Content Include="Images\L\L2E.png" />
+    <Content Include="Images\L\L2F.png" />
+    <Content Include="Images\P\P2G.png" />
+    <Content Include="Images\S\S0A.png" />
+    <Content Include="Images\S\S0B.png" />
+    <Content Include="Images\S\S0C.png" />
+    <Resource Include="image\sign\V1.png" />
+    <Resource Include="image\sign\V2.png" />
+    <Resource Include="image\sign\V3.png" />
+    <Resource Include="image\thing\01.png" />
+    <Resource Include="image\thing\02.png" />
+    <Resource Include="image\thing\03.png" />
+    <Resource Include="image\thing\Lip01.png" />
+    <Resource Include="image\thing\Lip02.png" />
+    <Resource Include="image\thing\Lips01.png" />
+    <Resource Include="image\thing\Lips02.png" />
+    <Resource Include="image\thing\p1.png" />
+    <Resource Include="image\thing\t1.png" />
+    <Resource Include="image\thing\t2.png" />
+    <Resource Include="image\thing\t3.png" />
+    <Resource Include="image\thing\t4.png" />
+    <Resource Include="image\thing\t5.png" />
+    <Resource Include="Images\S\S0E.png" />
+    <Resource Include="Images\S\S0D.png" />
+    <Resource Include="image\mask\M\L1.png" />
+    <Resource Include="image\mask\M\L19.png" />
+    <Resource Include="image\mask\M\L2.png" />
+    <Resource Include="image\mask\M\L20.png" />
+    <Resource Include="image\mask\M\L21.png" />
+    <Resource Include="image\mask\M\L22.png" />
+    <Resource Include="image\mask\M\L23.png" />
+    <Resource Include="image\mask\M\L24.png" />
+    <Resource Include="image\mask\M\L25.png" />
+    <Resource Include="image\mask\M\L26.png" />
+    <Resource Include="image\mask\M\L27.png" />
+    <Resource Include="image\mask\M\L3.png" />
+    <Resource Include="image\mask\M\L4.png" />
+    <Resource Include="image\mask\M\L5.png" />
+    <Resource Include="image\0\01.png" />
+    <Resource Include="image\0\02.png" />
+    <Resource Include="image\0\03.png" />
+    <Resource Include="image\0\04.png" />
+    <Resource Include="image\0\05.png" />
+    <Resource Include="image\0\06.png" />
+    <Resource Include="image\0\07.png" />
+    <Resource Include="image\0\08.png" />
+    <Resource Include="image\0\09.png" />
+    <Resource Include="image\0\10.png" />
+    <Resource Include="image\0\11.png" />
+    <Resource Include="image\0\12.png" />
+    <Resource Include="image\0\LIKE01.png" />
+    <Resource Include="image\0\LIKE02.png" />
+    <Resource Include="image\0\LIKE03.png" />
+    <Resource Include="image\0\loser.png" />
+    <Resource Include="image\0\ok.png" />
+    <Resource Include="image\0\S1.png" />
+    <Resource Include="image\0\S2.png" />
+    <Resource Include="image\0\S3.png" />
+    <Resource Include="image\0\S4.png" />
+    <Resource Include="image\0\S5.png" />
+    <Resource Include="image\0\S6.png" />
+    <Resource Include="image\0\SIGN01.png" />
+    <Resource Include="image\0\SIGN02.png" />
+    <Resource Include="image\0\SIGN03.png" />
+    <Resource Include="image\0\SIGN04.png" />
+    <Resource Include="image\0\SIGN05.png" />
+    <Resource Include="image\0\SIGN06.png" />
+    <Resource Include="image\0\t1.png" />
+    <Resource Include="image\0\t2.png" />
+    <Content Include="image\a1.jpg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

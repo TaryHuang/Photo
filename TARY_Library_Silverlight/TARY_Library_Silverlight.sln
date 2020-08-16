@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TARY_Library_Silverlight", "TARY_Library_Silverlight\TARY_Library_Silverlight.csproj", "{D6625056-1BAB-4703-B264-88E5AF600126}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6625056-1BAB-4703-B264-88E5AF600126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6625056-1BAB-4703-B264-88E5AF600126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6625056-1BAB-4703-B264-88E5AF600126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6625056-1BAB-4703-B264-88E5AF600126}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

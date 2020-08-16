@@ -1,0 +1,43 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhotoJ.FastOBJphoto"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="False" d:DesignHeight="800" d:DesignWidth="480" BackKeyPress="PhoneApplicationPage_BackKeyPress_1">
+
+    <!--LayoutRoot 是放置所有頁面的根資料格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel 包含應用程式的名稱和頁面標題-->
+        <StackPanel Grid.Row="0" VerticalAlignment="Center">
+            <TextBlock Text="圖    片" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+
+
+
+        <ScrollViewer Grid.Row="1" Margin="0,0,0,0" HorizontalScrollBarVisibility="Auto">
+            <StackPanel  x:Name="BOX">
+                <Image Name="image1" ImageOpened="image1_ImageOpened" />
+                <StackPanel  Orientation="Horizontal" HorizontalAlignment="Right">
+                    <Button Content="上傳圖片" Name="btnOpen"  Click="btnOpen_Click" FontSize="32" />
+                </StackPanel>
+            </StackPanel>
+        </ScrollViewer>
+        
+        <!--ContentPanel - 其他內容置於此-->
+    </Grid>
+
+</phone:PhoneApplicationPage>

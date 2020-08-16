@@ -1,0 +1,63 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="TARY_Library_Silverlight.TaryPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignHeight="768" d:DesignWidth="480"
+    shell:SystemTray.IsVisible="True" DataContext="{Binding}">
+
+    <!--LayoutRoot 是放置所有頁面的根資料格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--TitlePanel 包含應用程式的名稱和頁面標題-->
+        <StackPanel x:Name="TitlePanel" Margin="0,0,0,0">
+            <TextBlock x:Name="ApplicationTitle" Text="" Style="{StaticResource PhoneTextNormalStyle}"/>
+        </StackPanel>
+
+        <!--ContentPanel - 其他內容置於此-->
+        <Grid x:Name="ContentPanel" Margin="0,33,0,0" Visibility="Visible">
+            <Grid Height="660" HorizontalAlignment="Left" Margin="10,0,0,0" Name="G1" VerticalAlignment="Top" Width="460" Visibility="Collapsed">
+                <ScrollViewer Height="660" HorizontalAlignment="Left" Margin="0,0,0,0" Name="scrollViewer0" VerticalAlignment="Top" Width="460">
+                    <StackPanel Height="auto" Name="WriterBody" Width="auto" />
+                </ScrollViewer>
+            </Grid>
+            <Grid Height="660" HorizontalAlignment="Left" Margin="10,0,0,0" Name="G2" VerticalAlignment="Top" Width="460" Visibility="Collapsed" >
+                <ScrollViewer Height="660" HorizontalAlignment="Left" Margin="0,0,0,0" Name="scrollViewer1" VerticalAlignment="Top" Width="460">
+                    <StackPanel Height="auto" Name="ProductList" Width="auto" />
+                </ScrollViewer>
+            </Grid>
+            <Grid Height="660" HorizontalAlignment="Left" Margin="10,0,0,0" Name="G3" VerticalAlignment="Top" Width="460" Visibility="Collapsed">
+                <ScrollViewer Height="660" HorizontalAlignment="Left" Margin="0,0,0,0" Name="scrollViewer2" VerticalAlignment="Top" Width="460">
+                    <StackPanel Height="auto" Name="HotProductList" Width="auto" />
+                </ScrollViewer>
+            </Grid>
+            <Grid Height="660" HorizontalAlignment="Left" Margin="0,0,0,0" Name="G4" VerticalAlignment="Top" Width="480" Visibility="Collapsed">
+                <StackPanel Height="79" HorizontalAlignment="Left" Margin="12,34,0,0" Name="stackPanel1" VerticalAlignment="Top" Width="456" Orientation="Horizontal">
+                    <TextBlock Height="44" Name="textBlock1" Text="序 號：" FontSize="28" />
+                </StackPanel>
+                <StackPanel Height="535" HorizontalAlignment="Left" Margin="12,119,0,0" Name="stackPanel2" VerticalAlignment="Top" Width="456">
+                    <Button Content="送出" Height="83" Name="button1" Width="160" HorizontalAlignment="Right" BorderBrush="Transparent" FontSize="32" Click="button1_Click" />
+                    <TextBlock Height="434" Name="memo" Text="" TextWrapping="Wrap" FontSize="26" />
+                </StackPanel>
+            </Grid>
+
+
+
+            <Grid Height="660" HorizontalAlignment="Left" Margin="0,0,0,0" Name="G5" VerticalAlignment="Top" Width="480" Visibility="Collapsed">
+                <StackPanel Height="455" HorizontalAlignment="Left" Margin="12,130,0,0" Name="stackPanel3" VerticalAlignment="Top" Width="456">
+                    <TextBlock Height="156" Name="textBlock2" Text="已解鎖" FontSize="72" HorizontalAlignment="Center" />
+                    <TextBlock Height="59" Name="MESSAGE" Text="使用期限：2012/12/05" FontSize="36" Width="456" TextAlignment="Center" />
+                </StackPanel>
+            </Grid>
+        </Grid>
+
+    </Grid>
+
+    
+</phone:PhoneApplicationPage>
